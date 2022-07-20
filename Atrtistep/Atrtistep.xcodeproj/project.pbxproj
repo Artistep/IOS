@@ -37,6 +37,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D73D1B5528885997003CBA5B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D7649D482887F97400E3F30A /* Info.plist */,
+				D7649D3A2887F97200E3F30A /* AppDelegate.swift */,
+				D7649D3C2887F97200E3F30A /* SceneDelegate.swift */,
+				D7649D432887F97400E3F30A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D73D1B56288859A3003CBA5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7649D402887F97200E3F30A /* Main.storyboard */,
+				D7649D452887F97400E3F30A /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D73D1B57288859AA003CBA5B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D7649D3E2887F97200E3F30A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D73D1B58288859B1003CBA5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D7649D2E2887F97200E3F30A = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +91,10 @@
 		D7649D392887F97200E3F30A /* Atrtistep */ = {
 			isa = PBXGroup;
 			children = (
-				D7649D3A2887F97200E3F30A /* AppDelegate.swift */,
-				D7649D3C2887F97200E3F30A /* SceneDelegate.swift */,
-				D7649D3E2887F97200E3F30A /* ViewController.swift */,
-				D7649D402887F97200E3F30A /* Main.storyboard */,
-				D7649D432887F97400E3F30A /* Assets.xcassets */,
-				D7649D452887F97400E3F30A /* LaunchScreen.storyboard */,
-				D7649D482887F97400E3F30A /* Info.plist */,
+				D73D1B58288859B1003CBA5B /* Model */,
+				D73D1B56288859A3003CBA5B /* View */,
+				D73D1B57288859AA003CBA5B /* Controller */,
+				D73D1B5528885997003CBA5B /* Resources */,
 			);
 			path = Atrtistep;
 			sourceTree = "<group>";
@@ -288,7 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Atrtistep/Info.plist;
+				INFOPLIST_FILE = Atrtistep/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +347,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Atrtistep/Info.plist;
+				INFOPLIST_FILE = Atrtistep/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
