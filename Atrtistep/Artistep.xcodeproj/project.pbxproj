@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D7649D372887F97200E3F30A /* Atrtistep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atrtistep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7649D372887F97200E3F30A /* Artistep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artistep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7649D3A2887F97200E3F30A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7649D3C2887F97200E3F30A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D7649D3E2887F97200E3F30A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		D7649D382887F97200E3F30A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D7649D372887F97200E3F30A /* Atrtistep.app */,
+				D7649D372887F97200E3F30A /* Artistep.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,9 +102,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D7649D362887F97200E3F30A /* Atrtistep */ = {
+		D7649D362887F97200E3F30A /* Artistep */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7649D4B2887F97400E3F30A /* Build configuration list for PBXNativeTarget "Atrtistep" */;
+			buildConfigurationList = D7649D4B2887F97400E3F30A /* Build configuration list for PBXNativeTarget "Artistep" */;
 			buildPhases = (
 				D7649D332887F97200E3F30A /* Sources */,
 				D7649D342887F97200E3F30A /* Frameworks */,
@@ -114,9 +114,9 @@
 			);
 			dependencies = (
 			);
-			name = Atrtistep;
+			name = Artistep;
 			productName = Atrtistep;
-			productReference = D7649D372887F97200E3F30A /* Atrtistep.app */;
+			productReference = D7649D372887F97200E3F30A /* Artistep.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -134,7 +134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D7649D322887F97200E3F30A /* Build configuration list for PBXProject "Atrtistep" */;
+			buildConfigurationList = D7649D322887F97200E3F30A /* Build configuration list for PBXProject "Artistep" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -147,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D7649D362887F97200E3F30A /* Atrtistep */,
+				D7649D362887F97200E3F30A /* Artistep */,
 			);
 		};
 /* End PBXProject section */
@@ -321,6 +321,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Atrtistep/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Artistep;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -331,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Artistep.Atrtistep;
+				PRODUCT_BUNDLE_IDENTIFIER = Artistep.Artistep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -348,6 +349,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Atrtistep/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Artistep;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -358,7 +360,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Artistep.Atrtistep;
+				PRODUCT_BUNDLE_IDENTIFIER = Artistep.Artistep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -369,7 +371,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D7649D322887F97200E3F30A /* Build configuration list for PBXProject "Atrtistep" */ = {
+		D7649D322887F97200E3F30A /* Build configuration list for PBXProject "Artistep" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7649D492887F97400E3F30A /* Debug */,
@@ -378,7 +380,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7649D4B2887F97400E3F30A /* Build configuration list for PBXNativeTarget "Atrtistep" */ = {
+		D7649D4B2887F97400E3F30A /* Build configuration list for PBXNativeTarget "Artistep" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7649D4C2887F97400E3F30A /* Debug */,
