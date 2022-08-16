@@ -75,7 +75,7 @@
 		D7649D2E2887F97200E3F30A = {
 			isa = PBXGroup;
 			children = (
-				D7649D392887F97200E3F30A /* Atrtistep */,
+				D7649D392887F97200E3F30A /* Artistep */,
 				D7649D382887F97200E3F30A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,7 +88,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D7649D392887F97200E3F30A /* Atrtistep */ = {
+		D7649D392887F97200E3F30A /* Artistep */ = {
 			isa = PBXGroup;
 			children = (
 				D73D1B58288859B1003CBA5B /* Model */,
@@ -96,7 +96,7 @@
 				D73D1B57288859AA003CBA5B /* Controller */,
 				D73D1B5528885997003CBA5B /* Resources */,
 			);
-			path = Atrtistep;
+			path = Artistep;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
