@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Atrtistep
 //
-//  Created by 김동용 on 2022/07/20.
+//  Created by Artistep on 2022/07/20.
 //
 
 import UIKit
