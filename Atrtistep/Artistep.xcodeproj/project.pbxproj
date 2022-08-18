@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF8EDC8C28AE54A700AE1ECF /* TestTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8EDC8B28AE54A700AE1ECF /* TestTracking.swift */; };
 		D7649D3B2887F97200E3F30A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7649D3A2887F97200E3F30A /* AppDelegate.swift */; };
 		D7649D3D2887F97200E3F30A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7649D3C2887F97200E3F30A /* SceneDelegate.swift */; };
 		D7649D3F2887F97200E3F30A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7649D3E2887F97200E3F30A /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF8EDC8B28AE54A700AE1ECF /* TestTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTracking.swift; sourceTree = "<group>"; };
 		D7649D372887F97200E3F30A /* Artistep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artistep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7649D3A2887F97200E3F30A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7649D3C2887F97200E3F30A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				D7649D3E2887F97200E3F30A /* ViewController.swift */,
+				AF8EDC8B28AE54A700AE1ECF /* TestTracking.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				D7649D3B2887F97200E3F30A /* AppDelegate.swift in Sources */,
 				D7649D3D2887F97200E3F30A /* SceneDelegate.swift in Sources */,
 				D7DC801A28ABB152005F7D3B /* Model.swift in Sources */,
+				AF8EDC8C28AE54A700AE1ECF /* TestTracking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
