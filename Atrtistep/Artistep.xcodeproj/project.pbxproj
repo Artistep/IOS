@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF8EDC9128AE597700AE1ECF /* Page1MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8EDC8F28AE597700AE1ECF /* Page1MainTableViewCell.swift */; };
+		AF8EDC9228AE597700AE1ECF /* Page1MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8EDC9028AE597700AE1ECF /* Page1MainTableViewCell.xib */; };
 		D7649D3B2887F97200E3F30A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7649D3A2887F97200E3F30A /* AppDelegate.swift */; };
 		D7649D3D2887F97200E3F30A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7649D3C2887F97200E3F30A /* SceneDelegate.swift */; };
 		D7649D3F2887F97200E3F30A /* Page1MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7649D3E2887F97200E3F30A /* Page1MainController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF8EDC8F28AE597700AE1ECF /* Page1MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1MainTableViewCell.swift; sourceTree = "<group>"; };
+		AF8EDC9028AE597700AE1ECF /* Page1MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Page1MainTableViewCell.xib; sourceTree = "<group>"; };
 		D7649D372887F97200E3F30A /* Artistep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artistep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7649D3A2887F97200E3F30A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7649D3C2887F97200E3F30A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				D7649D402887F97200E3F30A /* Page1Main.storyboard */,
+				AF8EDC9028AE597700AE1ECF /* Page1MainTableViewCell.xib */,
+				AF8EDC8F28AE597700AE1ECF /* Page1MainTableViewCell.swift */,
 				D7649D452887F97400E3F30A /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -161,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7649D472887F97400E3F30A /* LaunchScreen.storyboard in Resources */,
+				AF8EDC9228AE597700AE1ECF /* Page1MainTableViewCell.xib in Resources */,
 				D7649D442887F97400E3F30A /* Assets.xcassets in Resources */,
 				D7649D422887F97200E3F30A /* Page1Main.storyboard in Resources */,
 			);
@@ -174,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7649D3F2887F97200E3F30A /* Page1MainController.swift in Sources */,
+				AF8EDC9128AE597700AE1ECF /* Page1MainTableViewCell.swift in Sources */,
 				D7649D3B2887F97200E3F30A /* AppDelegate.swift in Sources */,
 				D7649D3D2887F97200E3F30A /* SceneDelegate.swift in Sources */,
 				D7DC801A28ABB152005F7D3B /* Model.swift in Sources */,
