@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class Page1MainController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,3 +17,9 @@ class ViewController: UIViewController {
 
 }
 
+//MARK: TableView Extension
+
+extension Page1MainController: UITableViewDelegate, UITableViewDataSource {
+    
+    
+}
