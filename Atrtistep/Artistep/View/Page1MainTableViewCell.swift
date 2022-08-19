@@ -25,10 +25,15 @@ class Page1MainTableViewCell: UITableViewCell {
         designAdjustment()
         // Initialization code
     }
+    
+    override func layoutSubviews() {
+        contentView.layer.cornerRadius = 10
+        contentView.layer.borderColor = UIColor.white.cgColor
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     
@@ -36,7 +41,7 @@ class Page1MainTableViewCell: UITableViewCell {
         userImage.layer.cornerRadius = userImage.frame.width / 2
         userImage.clipsToBounds = true
         userImage.layer.borderWidth = 0.7
-        userImage.layer.borderColor = UIColor.black.cgColor
+        userImage.layer.borderColor = UIColor.gray.cgColor
         
         testVideo.layer.cornerRadius = 10
     }
