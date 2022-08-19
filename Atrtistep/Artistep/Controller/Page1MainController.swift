@@ -43,7 +43,7 @@ extension Page1MainController: UITableViewDelegate, UITableViewDataSource {
     
     // 테이블 뷰에 보여줄 갯수. 호출 이후 추가 될 때 마다 배열에 append --> reload
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     // 테이블 뷰에 올라간 셀의 형태
@@ -52,6 +52,10 @@ extension Page1MainController: UITableViewDelegate, UITableViewDataSource {
         cell.userID.text = "@sozohoy"
         cell.userNickName.text = "석지한"
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension // 크기 동적
     }
     
 }

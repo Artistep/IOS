@@ -14,6 +14,7 @@ class Page1MainTableViewCell: UITableViewCell {
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var userNickName: UILabel!
     @IBOutlet weak var userID: UILabel!
+    @IBOutlet weak var testVideo: UIView!
     
     //MARK: Properties
     
@@ -32,8 +33,12 @@ class Page1MainTableViewCell: UITableViewCell {
     }
     
     private func designAdjustment(){
-        userImage.layer.borderWidth = 1.0
-        userImage.layer.cornerRadius = 25
+        userImage.layer.cornerRadius = userImage.frame.width / 2
+        userImage.clipsToBounds = true
+        userImage.layer.borderWidth = 0.7
+        userImage.layer.borderColor = UIColor.black.cgColor
+        
+        testVideo.layer.cornerRadius = 10
     }
     
 }
