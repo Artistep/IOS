@@ -27,8 +27,12 @@ class Page1MainTableViewCell: UITableViewCell {
     }
     
     override func layoutSubviews() {
+        super.layoutSubviews()
+        
         contentView.layer.cornerRadius = 10
         contentView.layer.borderColor = UIColor.white.cgColor
+        
+        contentView.frame
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
