@@ -175,6 +175,9 @@
 		D7BC035128B77F83003AB3B1 /* Comment */ = {
 			isa = PBXGroup;
 			children = (
+				D7BC036328B7833E003AB3B1 /* Model */,
+				D7BC036228B7833A003AB3B1 /* View */,
+				D7BC036128B78332003AB3B1 /* Controller */,
 			);
 			path = Comment;
 			sourceTree = "<group>";
@@ -189,6 +192,9 @@
 		D7BC035328B77FF1003AB3B1 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D7BC036628B7834C003AB3B1 /* Model */,
+				D7BC036528B7834A003AB3B1 /* View */,
+				D7BC036428B78344003AB3B1 /* Controller */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -196,6 +202,9 @@
 		D7BC035428B7800F003AB3B1 /* Ranking */ = {
 			isa = PBXGroup;
 			children = (
+				D7BC036928B78358003AB3B1 /* Model */,
+				D7BC036828B78355003AB3B1 /* View */,
+				D7BC036728B78352003AB3B1 /* Controller */,
 			);
 			path = Ranking;
 			sourceTree = "<group>";
@@ -269,6 +278,69 @@
 			children = (
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		D7BC036128B78332003AB3B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D7BC036228B7833A003AB3B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7BC036328B7833E003AB3B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7BC036428B78344003AB3B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D7BC036528B7834A003AB3B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7BC036628B7834C003AB3B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7BC036728B78352003AB3B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D7BC036828B78355003AB3B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7BC036928B78358003AB3B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D7DC801828ABAFDF005F7D3B /* Model */ = {
