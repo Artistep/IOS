@@ -7,6 +7,8 @@
 
 import UIKit
 
+import AVFoundation
+
 class Page1MainTableViewCell: UITableViewCell {
 
     //MARK: IBOutlet properties
@@ -14,7 +16,7 @@ class Page1MainTableViewCell: UITableViewCell {
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var userNickName: UILabel!
     @IBOutlet weak var userID: UILabel!
-    @IBOutlet weak var testVideo: UIView!
+    @IBOutlet weak var videoView: UIView!
     
     //MARK: Properties
     
@@ -32,13 +34,13 @@ class Page1MainTableViewCell: UITableViewCell {
         contentView.layer.cornerRadius = 10
         contentView.layer.borderColor = UIColor.white.cgColor
         
-//        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 15,
-//                                                                     left: 0,
-//                                                                     bottom: 0,
-//                                                                     right: 0))
-//
-        
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 15,
+                                                                     left: 0,
+                                                                     bottom: 0,
+                                                                     right: 0))
+    // UUID !
     }
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -54,7 +56,7 @@ class Page1MainTableViewCell: UITableViewCell {
         userImage.layer.borderColor = UIColor.gray.cgColor
         
         // video
-        testVideo.layer.cornerRadius = 10
+        videoView.layer.cornerRadius = 10
     }
     
 }

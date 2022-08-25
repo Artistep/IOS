@@ -7,39 +7,45 @@
 
 import UIKit
 
+import AVFoundation
+
 class Page1MainController: UIViewController {
 
-    //MARK: IBOutlet properties
+    //MARK: IBOutlet Properties
     
     @IBOutlet weak var tableView: UITableView!
     
     //MARK: Properties
     
-    
-    //MARK: Functions
+    var player: AVPlayer!
+    var playerLayer: AVPlayerLayer!
+
+    //MARK: Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+                
         registerXib()
     }
     
-    //MARK: Button actions
+    //MARK: Button Actions
     
-    
-    //MARK: etc functions
+    //MARK: Functions
     
     private func registerXib(){
         let nib = UINib(nibName: "Page1MainTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "mainXib")
     }
     
+    //MARK: Objc Functions
+    
 }
 
-//MARK: Extension TableView
+//MARK: Extensions
 
 extension Page1MainController: UITableViewDelegate, UITableViewDataSource {
     
-    //MARK: TableView method
+    //MARK: TableView Method
     
     // 테이블 뷰에 보여줄 갯수. 호출 이후 추가 될 때 마다 배열에 append --> reload
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,9 +54,19 @@ extension Page1MainController: UITableViewDelegate, UITableViewDataSource {
     
     // 테이블 뷰에 올라간 셀의 형태
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "mainXib", for: indexPath) as! Page1MainTableViewCell
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mainXib",
+                                                 for: indexPath) as! Page1MainTableViewCell
         cell.userID.text = "@sozohoy"
         cell.userNickName.text = "석지한"
+        
+//        let url = URL(string: "https://media.w3.org/2010/05/sintel/trailer.mp4")!
+//        player = AVPlayer(url: url)
+//        playerLayer = AVPlayerLayer(player: player)
+//        playerLayer.videoGravity = .resize
+//
+//        cell.videoView.layer.addSublayer(playerLayer)
+        
         return cell
     }
     
