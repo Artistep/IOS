@@ -15,6 +15,7 @@
 		D7649D422887F97200E3F30A /* Page1Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7649D402887F97200E3F30A /* Page1Main.storyboard */; };
 		D7649D442887F97400E3F30A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7649D432887F97400E3F30A /* Assets.xcassets */; };
 		D7649D472887F97400E3F30A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7649D452887F97400E3F30A /* LaunchScreen.storyboard */; };
+		D7BC035D28B781EF003AB3B1 /* Array+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BC035C28B781EF003AB3B1 /* Array+extension.swift */; };
 		D7DC801A28ABB152005F7D3B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC801928ABB152005F7D3B /* Model.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		D7649D432887F97400E3F30A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7649D462887F97400E3F30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7649D482887F97400E3F30A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7BC035C28B781EF003AB3B1 /* Array+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+extension.swift"; sourceTree = "<group>"; };
 		D7DC801928ABB152005F7D3B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,12 +94,181 @@
 		D7649D392887F97200E3F30A /* Artistep */ = {
 			isa = PBXGroup;
 			children = (
-				D7DC801828ABAFDF005F7D3B /* Model */,
-				D73D1B56288859A3003CBA5B /* View */,
-				D73D1B57288859AA003CBA5B /* Controller */,
+				D7BC036028B78267003AB3B1 /* Manager */,
+				D7BC035F28B78259003AB3B1 /* Network */,
+				D7BC035E28B78251003AB3B1 /* Protocol */,
+				D7BC035B28B78189003AB3B1 /* Common */,
+				D7BC035A28B78182003AB3B1 /* Extension */,
+				D7BC034A28B77F5C003AB3B1 /* Scene */,
 				D73D1B5528885997003CBA5B /* Resources */,
 			);
 			path = Artistep;
+			sourceTree = "<group>";
+		};
+		D7BC034A28B77F5C003AB3B1 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				D7BC034F28B77F75003AB3B1 /* Page1 */,
+				D7BC034E28B77F71003AB3B1 /* Page2 */,
+				D7BC034D28B77F6C003AB3B1 /* Page3 */,
+				D7BC034C28B77F67003AB3B1 /* Page4 */,
+				D7BC034B28B77F61003AB3B1 /* Page5 */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		D7BC034B28B77F61003AB3B1 /* Page5 */ = {
+			isa = PBXGroup;
+			children = (
+				D7BC035828B78119003AB3B1 /* Profile */,
+				D7BC035928B7813E003AB3B1 /* FollowList */,
+			);
+			path = Page5;
+			sourceTree = "<group>";
+		};
+		D7BC034C28B77F67003AB3B1 /* Page4 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Page4;
+			sourceTree = "<group>";
+		};
+		D7BC034D28B77F6C003AB3B1 /* Page3 */ = {
+			isa = PBXGroup;
+			children = (
+				D7BC035528B78030003AB3B1 /* BulletinBoard */,
+				D7BC035628B780B1003AB3B1 /* PostFeed */,
+				D7BC035728B780DC003AB3B1 /* DetailFeed */,
+			);
+			path = Page3;
+			sourceTree = "<group>";
+		};
+		D7BC034E28B77F71003AB3B1 /* Page2 */ = {
+			isa = PBXGroup;
+			children = (
+				D7BC035328B77FF1003AB3B1 /* Main */,
+				D7BC035428B7800F003AB3B1 /* Ranking */,
+			);
+			path = Page2;
+			sourceTree = "<group>";
+		};
+		D7BC034F28B77F75003AB3B1 /* Page1 */ = {
+			isa = PBXGroup;
+			children = (
+				D7BC035028B77F7F003AB3B1 /* Main */,
+				D7BC035128B77F83003AB3B1 /* Comment */,
+				D7BC035228B77FA6003AB3B1 /* PostFeed */,
+			);
+			path = Page1;
+			sourceTree = "<group>";
+		};
+		D7BC035028B77F7F003AB3B1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D7DC801828ABAFDF005F7D3B /* Model */,
+				D73D1B56288859A3003CBA5B /* View */,
+				D73D1B57288859AA003CBA5B /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D7BC035128B77F83003AB3B1 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		D7BC035228B77FA6003AB3B1 /* PostFeed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PostFeed;
+			sourceTree = "<group>";
+		};
+		D7BC035328B77FF1003AB3B1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D7BC035428B7800F003AB3B1 /* Ranking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Ranking;
+			sourceTree = "<group>";
+		};
+		D7BC035528B78030003AB3B1 /* BulletinBoard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BulletinBoard;
+			sourceTree = "<group>";
+		};
+		D7BC035628B780B1003AB3B1 /* PostFeed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PostFeed;
+			sourceTree = "<group>";
+		};
+		D7BC035728B780DC003AB3B1 /* DetailFeed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailFeed;
+			sourceTree = "<group>";
+		};
+		D7BC035828B78119003AB3B1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D7BC035928B7813E003AB3B1 /* FollowList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FollowList;
+			sourceTree = "<group>";
+		};
+		D7BC035A28B78182003AB3B1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D7BC035C28B781EF003AB3B1 /* Array+extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D7BC035B28B78189003AB3B1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D7BC035E28B78251003AB3B1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		D7BC035F28B78259003AB3B1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D7BC036028B78267003AB3B1 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		D7DC801828ABAFDF005F7D3B /* Model */ = {
@@ -183,6 +354,7 @@
 				D7649D3F2887F97200E3F30A /* Page1MainController.swift in Sources */,
 				AF8EDC9128AE597700AE1ECF /* Page1MainTableViewCell.swift in Sources */,
 				D7649D3B2887F97200E3F30A /* AppDelegate.swift in Sources */,
+				D7BC035D28B781EF003AB3B1 /* Array+extension.swift in Sources */,
 				D7649D3D2887F97200E3F30A /* SceneDelegate.swift in Sources */,
 				D7DC801A28ABB152005F7D3B /* Model.swift in Sources */,
 			);
