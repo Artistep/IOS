@@ -13,10 +13,11 @@ class MainTableViewCell: UITableViewCell {
 
     //MARK: IBOutlet properties
     
-    @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var userNickName: UILabel!
     @IBOutlet weak var userID: UILabel!
-    @IBOutlet weak var videoView: UIView!
+    @IBOutlet weak var userImage: UIImageView!
+    @IBOutlet weak var userVideo: UIView!
+    
     
     //MARK: Properties
     
@@ -56,7 +57,6 @@ class MainTableViewCell: UITableViewCell {
         userImage.layer.borderColor = UIColor.gray.cgColor
         
         // video
-        videoView.layer.cornerRadius = 10
     }
     
 }

@@ -114,10 +114,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="userID" destination="aUL-1y-5kr" id="q89-le-eaJ"/>
-                <outlet property="userImage" destination="0wR-bk-Vo4" id="Lki-hI-LTp"/>
-                <outlet property="userNickName" destination="5f6-VL-wio" id="YFv-MU-YbB"/>
-                <outlet property="videoView" destination="xHh-4q-j9U" id="bj0-78-S43"/>
+                <outlet property="userID" destination="aUL-1y-5kr" id="l36-jE-O4K"/>
+                <outlet property="userImage" destination="0wR-bk-Vo4" id="fay-dH-ubY"/>
+                <outlet property="userNickName" destination="5f6-VL-wio" id="y4p-L3-D9i"/>
+                <outlet property="userVideo" destination="xHh-4q-j9U" id="qJB-xo-XnM"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="125.89285714285714"/>
         </tableViewCell>
