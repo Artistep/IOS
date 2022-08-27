@@ -17,8 +17,6 @@ class MainController: UIViewController {
     
     //MARK: Properties
     
-    var player: AVPlayer!
-    var playerLayer: AVPlayerLayer!
 
     //MARK: Life Cycle
     
@@ -58,7 +56,13 @@ extension MainController: UITableViewDelegate, UITableViewDataSource {
                                                  for: indexPath) as! MainTableViewCell
         cell.userID.text = "@sozohoy"
         cell.userNickName.text = "석지한"
-        cell.url = URL(string: "https://media.w3.org/2010/05/sintel/trailer.mp4")!
+        
+        let player = AVPlayer(url: URL(string: "https://media.w3.org/2010/05/sintel/trailer.mp4")!)
+        let playerLayer = AVPlayerLayer(player: player)
+        
+        playerLayer.frame = cell.userVideo.bounds
+        cell.userVideo.layer.addSublayer(playerLayer)
+        player.play()
         
         return cell
     }

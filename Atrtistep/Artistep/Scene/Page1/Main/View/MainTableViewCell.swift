@@ -20,38 +20,25 @@ class MainTableViewCell: UITableViewCell {
     
     //MARK: Properties
     
-    var player: AVPlayer!
-    var playerLayer: AVPlayerLayer!
-    
-    var url = URL(string: "https://media.w3.org/2010/05/sintel/trailer.mp4")!
-    
     //MARK: Functions
     
 
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        player = AVPlayer(url: url)
-        playerLayer = AVPlayerLayer(player: player)
-        playerLayer.videoGravity = .resize
         designAdjustment()
-        
-        player.play()
-        
         // Initialization code
     }
     
+    
     override func layoutSubviews() {
         super.layoutSubviews()
-        
         contentView.layer.cornerRadius = 10
         contentView.layer.borderColor = UIColor.white.cgColor
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 15,
                                                                      left: 0,
                                                                      bottom: 0,
                                                                      right: 0))
-        
-        playerLayer.frame = userVideo.bounds
         
     // UUID !
         
