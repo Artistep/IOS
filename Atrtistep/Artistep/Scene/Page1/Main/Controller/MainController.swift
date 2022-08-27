@@ -46,7 +46,7 @@ extension MainController: UITableViewDelegate, UITableViewDataSource {
     
     // 테이블 뷰에 보여줄 갯수. 호출 이후 추가 될 때 마다 배열에 append --> reload
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 1
     }
     
     // 테이블 뷰에 올라간 셀의 형태
@@ -57,10 +57,13 @@ extension MainController: UITableViewDelegate, UITableViewDataSource {
         cell.userID.text = "@sozohoy"
         cell.userNickName.text = "석지한"
         
-        let player = AVPlayer(url: URL(string: "https://media.w3.org/2010/05/sintel/trailer.mp4")!)
+        let player = AVPlayer(url: URL(string: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4")!)
         let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.videoGravity = .resizeAspect
+        playerLayer.needsDisplayOnBoundsChange = true
+        playerLayer.frame.size = CGSize(width: UIScreen.main.bounds.width - 36,
+                                        height: 366)
         
-        playerLayer.frame = cell.userVideo.bounds
         cell.userVideo.layer.addSublayer(playerLayer)
         player.play()
         
