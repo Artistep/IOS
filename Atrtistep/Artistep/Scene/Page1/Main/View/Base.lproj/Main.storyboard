@@ -16,17 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="please" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scI-WV-Tgh">
-                                <rect key="frame" x="186" y="438" width="50" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zQF-AG-Cfc">
+                                <rect key="frame" x="18" y="114" width="378" height="732"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="cVI-c0-2ES"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="igb-8G-ebm"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4O0-M9-xhx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4O0-M9-xhx" firstAttribute="bottom" secondItem="zQF-AG-Cfc" secondAttribute="bottom" constant="16" id="F9e-Jg-y6D"/>
+                            <constraint firstItem="4O0-M9-xhx" firstAttribute="trailing" secondItem="zQF-AG-Cfc" secondAttribute="trailing" constant="18" id="M95-G2-e27"/>
+                            <constraint firstItem="zQF-AG-Cfc" firstAttribute="top" secondItem="4O0-M9-xhx" secondAttribute="top" constant="70" id="mUd-qy-yYO"/>
+                            <constraint firstItem="zQF-AG-Cfc" firstAttribute="leading" secondItem="4O0-M9-xhx" secondAttribute="leading" constant="18" id="neK-C7-AKL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="zQF-AG-Cfc" id="qYU-jl-R5H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

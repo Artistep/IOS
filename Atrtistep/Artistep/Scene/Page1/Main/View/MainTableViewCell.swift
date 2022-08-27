@@ -18,14 +18,26 @@ class MainTableViewCell: UITableViewCell {
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var userVideo: UIView!
     
-    
     //MARK: Properties
+    
+    var player: AVPlayer!
+    var playerLayer: AVPlayerLayer!
+    
+    var url = URL(string: "https://media.w3.org/2010/05/sintel/trailer.mp4")!
     
     //MARK: Functions
     
+
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        player = AVPlayer(url: url)
+        playerLayer = AVPlayerLayer(player: player)
+        playerLayer.videoGravity = .resize
         designAdjustment()
+        
+        player.play()
+        
         // Initialization code
     }
     
@@ -34,12 +46,15 @@ class MainTableViewCell: UITableViewCell {
         
         contentView.layer.cornerRadius = 10
         contentView.layer.borderColor = UIColor.white.cgColor
-        
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 15,
                                                                      left: 0,
                                                                      bottom: 0,
                                                                      right: 0))
+        
+        playerLayer.frame = userVideo.bounds
+        
     // UUID !
+        
     }
     
 
@@ -55,7 +70,6 @@ class MainTableViewCell: UITableViewCell {
         userImage.clipsToBounds = true
         userImage.layer.borderWidth = 0.7
         userImage.layer.borderColor = UIColor.gray.cgColor
-        
         // video
     }
     
