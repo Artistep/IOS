@@ -9,6 +9,7 @@ import UIKit
 
 class Page2MainViewController: UIViewController {
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
+        view.backgroundColor = .systemBackground
     }
 }
