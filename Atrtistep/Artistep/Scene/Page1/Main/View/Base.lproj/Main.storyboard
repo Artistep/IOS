@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zQF-AG-Cfc">
-                                <rect key="frame" x="0.0" y="114" width="414" height="732"/>
+                                <rect key="frame" x="18" y="114" width="378" height="732"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="cVI-c0-2ES"/>
@@ -29,9 +29,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4O0-M9-xhx" firstAttribute="bottom" secondItem="zQF-AG-Cfc" secondAttribute="bottom" constant="16" id="F9e-Jg-y6D"/>
-                            <constraint firstItem="4O0-M9-xhx" firstAttribute="trailing" secondItem="zQF-AG-Cfc" secondAttribute="trailing" id="M95-G2-e27"/>
+                            <constraint firstItem="4O0-M9-xhx" firstAttribute="trailing" secondItem="zQF-AG-Cfc" secondAttribute="trailing" constant="18" id="M95-G2-e27"/>
                             <constraint firstItem="zQF-AG-Cfc" firstAttribute="top" secondItem="4O0-M9-xhx" secondAttribute="top" constant="70" id="mUd-qy-yYO"/>
-                            <constraint firstItem="zQF-AG-Cfc" firstAttribute="leading" secondItem="4O0-M9-xhx" secondAttribute="leading" id="neK-C7-AKL"/>
+                            <constraint firstItem="zQF-AG-Cfc" firstAttribute="leading" secondItem="4O0-M9-xhx" secondAttribute="leading" constant="18" id="neK-C7-AKL"/>
                         </constraints>
                     </view>
                     <connections>
