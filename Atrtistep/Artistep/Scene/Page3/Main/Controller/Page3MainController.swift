@@ -18,10 +18,10 @@ class Page3MainController: UIViewController {
     
     private let sections: [String] = ["자유게시판", "정보게시판", "피드백게시판", "공지사항"]
     
-    private let bulletinBoardItems: [String] = ["유저가 작성한 제목이 보입니다."]
-    private let postFeedItems: [String] = ["유저가 작성한 제목이 보입니다."]
-    private let detailFeedItems: [String] = ["유저가 작성한 제목이 보입니다."]
-    private let noticeItems: [String] = ["공지의 제목이 노출 됩니다."]
+    private let bulletinBoardItems: [String] = ["유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다."]
+    private let postFeedItems: [String] = ["유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다."]
+    private let detailFeedItems: [String] = ["유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다."]
+    private let noticeItems: [String] = ["공지의 제목이 노출 됩니다.", "공지의 제목이 노출 됩니다.", "공지의 제목이 노출 됩니다.", "공지의 제목이 노출 됩니다."]
     
     
     override func viewDidLoad() {
@@ -29,6 +29,17 @@ class Page3MainController: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
+        
+        self.tableView.backgroundColor = UIColor.clear
+        
+        registerXib()
+    }
+    
+    //MARK: Functions
+    
+    private func registerXib(){
+        let nib = UINib(nibName: "Page3MainTableViewBoardCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "boardCell")
     }
 }
 
@@ -65,22 +76,26 @@ extension Page3MainController: UITableViewDelegate, UITableViewDataSource{
         }
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+            cell.backgroundColor = .clear
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "boardCell",
+                                                 for: indexPath) as! Page3MainTableViewBoardCell
         switch indexPath.section {
             
         case 0:
-            cell.textLabel?.text = bulletinBoardItems[indexPath.row]
+            cell.title?.text = bulletinBoardItems[indexPath.row]
             
         case 1:
-            cell.textLabel?.text = postFeedItems[indexPath.row]
+            cell.title?.text = postFeedItems[indexPath.row]
             
         case 2:
-            cell.textLabel?.text = detailFeedItems[indexPath.row]
+            cell.title?.text = detailFeedItems[indexPath.row]
             
         case 3:
-            cell.textLabel?.text = noticeItems[indexPath.row]
+            cell.title?.text = noticeItems[indexPath.row]
             
         default:
             return UITableViewCell()
