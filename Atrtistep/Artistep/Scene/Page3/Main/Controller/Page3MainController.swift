@@ -18,10 +18,17 @@ class Page3MainController: UIViewController {
     
     private let sections: [String] = ["자유게시판", "정보게시판", "피드백게시판", "공지사항"]
     
-    private let bulletinBoardItems: [String] = ["유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다."]
-    private let postFeedItems: [String] = ["유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다."]
-    private let detailFeedItems: [String] = ["유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다."]
-    private let noticeItems: [String] = ["공지의 제목이 노출 됩니다.", "공지의 제목이 노출 됩니다.", "공지의 제목이 노출 됩니다.", "공지의 제목이 노출 됩니다."]
+    private let bulletinBoardItems: [String] = ["유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다.",
+                                                "유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다."]
+    
+    private let postFeedItems: [String] = ["유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다.",
+                                           "유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다."]
+    
+    private let detailFeedItems: [String] = ["유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다.",
+                                             "유저가 작성한 제목이 보입니다.", "유저가 작성한 제목이 보입니다."]
+    
+    private let noticeItems: [String] = ["공지의 제목이 노출 됩니다.", "공지의 제목이 노출 됩니다.",
+                                         "공지의 제목이 노출 됩니다.", "공지의 제목이 노출 됩니다."]
     
     
     override func viewDidLoad() {
@@ -76,11 +83,13 @@ extension Page3MainController: UITableViewDelegate, UITableViewDataSource{
         }
     }
     
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell,
+                   forRowAt indexPath: IndexPath) {
             cell.backgroundColor = .clear
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt
+                   indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "boardCell",
                                                  for: indexPath) as! Page3MainTableViewBoardCell
         switch indexPath.section {
