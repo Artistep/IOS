@@ -45,8 +45,11 @@ class Page3MainController: UIViewController {
     //MARK: Functions
     
     private func registerXib(){
-        let nib = UINib(nibName: "Page3MainTableViewBoardCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "boardCell")
+        let boardNib = UINib(nibName: "Page3MainTableViewBoardCell", bundle: nil)
+        tableView.register(boardNib, forCellReuseIdentifier: "boardCell")
+        
+        let noticeNib = UINib(nibName: "Page3MainTableViewNoticeCell", bundle: nil)
+        tableView.register(noticeNib, forCellReuseIdentifier: "noticeCell")
     }
 }
 
@@ -90,27 +93,34 @@ extension Page3MainController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt
                    indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "boardCell",
+        
+        
+        
+        let boardCell = tableView.dequeueReusableCell(withIdentifier: "boardCell",
                                                  for: indexPath) as! Page3MainTableViewBoardCell
+        let noticeCell = tableView.dequeueReusableCell(withIdentifier: "noticeCell",
+                                                 for: indexPath) as! Page3MainTableViewNoticeCell
+        
         switch indexPath.section {
             
         case 0:
-            cell.title?.text = bulletinBoardItems[indexPath.row]
+            boardCell.title?.text = bulletinBoardItems[indexPath.row]
             
         case 1:
-            cell.title?.text = postFeedItems[indexPath.row]
+            boardCell.title?.text = postFeedItems[indexPath.row]
             
         case 2:
-            cell.title?.text = detailFeedItems[indexPath.row]
+            boardCell.title?.text = detailFeedItems[indexPath.row]
             
         case 3:
-            cell.title?.text = noticeItems[indexPath.row]
+            noticeCell.title?.text = noticeItems[indexPath.row]
+            return noticeCell
             
         default:
             return UITableViewCell()
         }
         
-        return cell
+        return boardCell
     }
     
     
