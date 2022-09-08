@@ -58,41 +58,50 @@ extension MainController: UITableViewDelegate, UITableViewDataSource {
         cell.userID.text = "@sozohoy"
         cell.userNickName.text = "석지한"
         
-        let videoAsset = AVURLAsset(url: URL(string: "https://thumbs.gfycat.com/FoolhardyMiserlyAsiantrumpetfish-mobile.mp4")!)
+        let videoAsset = AVAsset(url: URL(string: "https://thumbs.gfycat.com/FoolhardyMiserlyAsiantrumpetfish-mobile.mp4")!)
         let videoAssetTrack = videoAsset.tracks(withMediaType: .video).first
         
         if let naturalSize = videoAssetTrack?.naturalSize{
             print(naturalSize)
-            if naturalSize.width > naturalSize.height{
-             
-                cell.userVideo.frame = CGRect(x: self.view.frame.minX,
-                                              y: self.view.frame.minY,
-                                              width: self.view.frame.width,
-                                              height: 270)
-
-            } else {
-                
-                cell.userVideo.frame = CGRect(x: self.view.frame.minX,
-                                              y: self.view.frame.minY,
-                                              width: self.view.frame.width,
-                                              height: 800)
-                
-            }
+//            if naturalSize.width > naturalSize.height{
+//                print(256)
+//                cell.userVideo.frame = CGRect(x: self.view.frame.minX,
+//                                              y: self.view.frame.minY,
+//                                              width: UIScreen.main.bounds.size.width - 36,
+//                                              height: (UIScreen.main.bounds.size.width - 36) * 0.6)
+////
+//
+//
+//            } else {
+//                print(512)
+//                cell.userVideo.frame = CGRect(x: self.view.frame.minX,
+//                                              y: self.view.frame.minY,
+//                                              width: UIScreen.main.bounds.size.width - 36,
+//                                              height: (UIScreen.main.bounds.size.width - 36) * 1.8)
+//
+//
+//            }
+            
+            let player = AVPlayer(url: URL(string: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4")!)
+            // https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4 -- 4:3
+            // https://thumbs.gfycat.com/FoolhardyMiserlyAsiantrumpetfish-mobile.mp4 -- 9:16 -> 3:4
+            
+            print(cell.userVideo.frame)
+            
+            let playerLayer = AVPlayerLayer(player: player)
+            
+            playerLayer.videoGravity = .resizeAspect
+            playerLayer.needsDisplayOnBoundsChange = true
+            playerLayer.frame.size = CGSize(width: UIScreen.main.bounds.size.width - 36,
+                                            height: cell.userVideo.bounds.height)
+                   
+            print(playerLayer.frame)
+            
+            cell.userVideo.layer.addSublayer(playerLayer)
+            player.play()
+            
         }
-        
-        let player = AVPlayer(url: URL(string: "https://thumbs.gfycat.com/FoolhardyMiserlyAsiantrumpetfish-mobile.mp4")!)
-        // https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4 -- 4:3
-        // https://thumbs.gfycat.com/FoolhardyMiserlyAsiantrumpetfish-mobile.mp4 -- 9:16 -> 3:4
-        let playerLayer = AVPlayerLayer(player: player)
-        
-        
-        playerLayer.videoGravity = .resizeAspect
-        playerLayer.needsDisplayOnBoundsChange = true
-        playerLayer.frame.size = CGSize(width: UIScreen.main.bounds.width - 36,
-                                        height: cell.userVideo.bounds.height)
-        
-        cell.userVideo.layer.addSublayer(playerLayer)
-        player.play()
+
         return cell
     }
     
