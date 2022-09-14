@@ -45,6 +45,9 @@ class Page3MainController: UIViewController {
     //MARK: Functions
     
     private func registerXib(){
+        let headerNib = UINib(nibName: "Page3MainTableViewSectionHeader", bundle: nil)
+        tableView.register(headerNib, forHeaderFooterViewReuseIdentifier: "header")
+        
         let boardNib = UINib(nibName: "Page3MainTableViewBoardCell", bundle: nil)
         tableView.register(boardNib, forCellReuseIdentifier: "boardCell")
         
@@ -61,8 +64,14 @@ extension Page3MainController: UITableViewDelegate, UITableViewDataSource{
         return sections.count
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sections[section]
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let sectionHeader = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as! Page3MainTableViewSectionHeader
+
+        sectionHeader.sectionTitle.text = sections[section]
+
+        return sectionHeader
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

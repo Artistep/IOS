@@ -16,6 +16,8 @@
 		2C22BCDE28C782D70074C125 /* Page3MainTableViewBoardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C22BCDC28C782D70074C125 /* Page3MainTableViewBoardCell.xib */; };
 		2C22BCE528C9AE5F0074C125 /* Page3MainTableViewNoticeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C22BCE328C9AE5F0074C125 /* Page3MainTableViewNoticeCell.swift */; };
 		2C22BCE628C9AE5F0074C125 /* Page3MainTableViewNoticeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C22BCE428C9AE5F0074C125 /* Page3MainTableViewNoticeCell.xib */; };
+		2C22BCEE28D16C9B0074C125 /* Page3MainTableViewSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C22BCED28D16C9B0074C125 /* Page3MainTableViewSectionHeader.swift */; };
+		2C22BCF028D16CAA0074C125 /* Page3MainTableViewSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C22BCEF28D16CAA0074C125 /* Page3MainTableViewSectionHeader.xib */; };
 		AF8EDC9128AE597700AE1ECF /* Page1MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8EDC8F28AE597700AE1ECF /* Page1MainTableViewCell.swift */; };
 		D7649D3B2887F97200E3F30A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7649D3A2887F97200E3F30A /* AppDelegate.swift */; };
 		D7649D3D2887F97200E3F30A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7649D3C2887F97200E3F30A /* SceneDelegate.swift */; };
@@ -41,6 +43,8 @@
 		2C22BCDC28C782D70074C125 /* Page3MainTableViewBoardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Page3MainTableViewBoardCell.xib; sourceTree = "<group>"; };
 		2C22BCE328C9AE5F0074C125 /* Page3MainTableViewNoticeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3MainTableViewNoticeCell.swift; sourceTree = "<group>"; };
 		2C22BCE428C9AE5F0074C125 /* Page3MainTableViewNoticeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Page3MainTableViewNoticeCell.xib; sourceTree = "<group>"; };
+		2C22BCED28D16C9B0074C125 /* Page3MainTableViewSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3MainTableViewSectionHeader.swift; sourceTree = "<group>"; };
+		2C22BCEF28D16CAA0074C125 /* Page3MainTableViewSectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Page3MainTableViewSectionHeader.xib; sourceTree = "<group>"; };
 		AF8EDC8F28AE597700AE1ECF /* Page1MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1MainTableViewCell.swift; sourceTree = "<group>"; };
 		AF8EDC9028AE597700AE1ECF /* Page1MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Page1MainTableViewCell.xib; sourceTree = "<group>"; };
 		D7649D372887F97200E3F30A /* Artistep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artistep.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +116,8 @@
 				2C22BCDC28C782D70074C125 /* Page3MainTableViewBoardCell.xib */,
 				2C22BCE328C9AE5F0074C125 /* Page3MainTableViewNoticeCell.swift */,
 				2C22BCE428C9AE5F0074C125 /* Page3MainTableViewNoticeCell.xib */,
+				2C22BCED28D16C9B0074C125 /* Page3MainTableViewSectionHeader.swift */,
+				2C22BCEF28D16CAA0074C125 /* Page3MainTableViewSectionHeader.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -511,6 +517,7 @@
 			files = (
 				2C22BCCB28C6EFC90074C125 /* Page1MainTableViewCell.xib in Resources */,
 				2C22BCCA28C6EFB10074C125 /* Assets.xcassets in Resources */,
+				2C22BCF028D16CAA0074C125 /* Page3MainTableViewSectionHeader.xib in Resources */,
 				2C22BCE628C9AE5F0074C125 /* Page3MainTableViewNoticeCell.xib in Resources */,
 				D7649D472887F97400E3F30A /* LaunchScreen.storyboard in Resources */,
 				2C22BCD428C6FAA10074C125 /* Page3Main.storyboard in Resources */,
@@ -530,6 +537,7 @@
 				D7BC039528B784A3003AB3B1 /* FollowList.swift in Sources */,
 				D7BC039128B78490003AB3B1 /* Page.swift in Sources */,
 				D7649D3F2887F97200E3F30A /* Page1MainController.swift in Sources */,
+				2C22BCEE28D16C9B0074C125 /* Page3MainTableViewSectionHeader.swift in Sources */,
 				2C22BCDD28C782D70074C125 /* Page3MainTableViewBoardCell.swift in Sources */,
 				AF8EDC9128AE597700AE1ECF /* Page1MainTableViewCell.swift in Sources */,
 				2C22BCE528C9AE5F0074C125 /* Page3MainTableViewNoticeCell.swift in Sources */,
