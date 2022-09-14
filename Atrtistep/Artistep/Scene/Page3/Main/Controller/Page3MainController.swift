@@ -71,8 +71,13 @@ extension Page3MainController: UITableViewDelegate, UITableViewDataSource{
         sectionHeader.sectionTitle.text = sections[section]
 
         return sectionHeader
-        
     }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+
+        return 30
+    }
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
